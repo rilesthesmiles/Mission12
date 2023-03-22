@@ -1,11 +1,17 @@
 {
-    "extends": ["react-app", "plugin:prettier/recommended", "eslint:recommended"],
+    "extends": ["react-app", "eslint:recommended","plugin:prettier/recommended"],
+    "plugins": ["prettier"],
     "rules": {
-        "prettier/prettier": [
-            "error", 
-            {
-                "endOfLine": "auto"
-            }
-        ]
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"]
     }
 }
+
+//"rules": {
+//    "prettier/prettier": [
+//        "error", 
+//        {
+//            "endOfLine": "auto"
+//        }
+//    ]
+//}
